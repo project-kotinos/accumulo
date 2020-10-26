@@ -8,7 +8,7 @@ build_targets:
     container:
       image: yourbase/yb_ubuntu:18.04
     commands:
-      - mvn -B -V -e -ntp clean verify -Dstyle.color=always -Dhadoop.profile=3 -Dfailsafe.rerunFailingTestsCount=5
+      - mvn -B -V -e clean verify -Dstyle.color=always -Dhadoop.profile=3 -Dfailsafe.rerunFailingTestsCount=5
 
 ci:
   builds:
